@@ -23,7 +23,7 @@ import io.quarkus.deployment.builditem.substrate.ReflectiveClassBuildItem;
 @Path("/")
 public class GreetingResource {
     
-    private final static Boolean ratings_enabled = true;//Boolean.valueOf(System.getenv("ENABLE_RATINGS"));
+    private final static Boolean ratings_enabled = false;//Boolean.valueOf(System.getenv("ENABLE_RATINGS"));
     private final static String star_color = System.getenv("STAR_COLOR") == null ? "red" : System.getenv("STAR_COLOR");
     private final static String services_domain = System.getenv("SERVICES_DOMAIN") == null ? "" : ("." + System.getenv("SERVICES_DOMAIN"));
     private final static String ratings_service = "http://ratings" + services_domain + ":9080/ratings";
