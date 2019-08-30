@@ -127,9 +127,9 @@
                 <configuration>
                   <enableHttpUrlHandler>true</enableHttpUrlHandler>
                   <ignoredEntries>META-INF/BC2048KE.SF,META-INF/BC1024KE.SF,META-INF/BC2048KE.DSA,META-INF/BC1024KE.DSA</ignoredEntries>
-                  <additionalBuildArgs>
+                  <!-- additionalBuildArgs>
                     <additionalBuildArg>-H:ReflectionConfigurationFiles=classes/reflection-config.json</additionalBuildArg>
-                  </additionalBuildArgs>
+                  </additionalBuildArgs -->
                 </configuration>
               </execution>
             </executions>
